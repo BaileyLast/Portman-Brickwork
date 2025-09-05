@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { insertContactSubmissionSchema, type InsertContactSubmission } from "@shared/schema";
@@ -26,7 +25,7 @@ export default function Contact() {
       phone: "",
       projectType: "",
       projectDescription: "",
-      preferredContactMethod: "phone",
+      preferredContactMethod: "email",
     },
   });
 
@@ -151,23 +150,6 @@ export default function Contact() {
                   )}
                 </div>
                 
-                <div>
-                  <Label>Preferred Contact Method</Label>
-                  <RadioGroup 
-                    defaultValue="phone" 
-                    onValueChange={(value) => form.setValue("preferredContactMethod", value)}
-                    className="flex space-x-4 mt-2"
-                  >
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="phone" id="phone-method" data-testid="radio-phone" />
-                      <Label htmlFor="phone-method">Phone</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="email" id="email-method" data-testid="radio-email" />
-                      <Label htmlFor="email-method">Email</Label>
-                    </div>
-                  </RadioGroup>
-                </div>
                 
                 <Button 
                   type="submit" 
