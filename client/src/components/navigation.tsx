@@ -40,20 +40,20 @@ export default function Navigation() {
             >
               Services
             </Link>
-            <button 
-              onClick={() => scrollToSection('portfolio')}
+            <Link 
+              href="/portfolio"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-portfolio"
             >
               Portfolio
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
+            </Link>
+            <Link 
+              href="/about"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-about"
             >
               About
-            </button>
+            </Link>
             <Button 
               onClick={() => scrollToSection('contact')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -95,20 +95,22 @@ export default function Navigation() {
               >
                 Services
               </Link>
-              <button 
-                onClick={() => scrollToSection('portfolio')}
+              <Link 
+                href="/portfolio"
                 className="text-left text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
                 data-testid="mobile-nav-portfolio"
               >
                 Portfolio
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+              </Link>
+              <Link 
+                href="/about"
                 className="text-left text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
                 data-testid="mobile-nav-about"
               >
                 About
-              </button>
+              </Link>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
