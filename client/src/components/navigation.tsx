@@ -19,7 +19,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <Hammer className="text-primary text-2xl" />
-            <span className="text-2xl font-bold text-primary">BraintreeBricklayer</span>
+            <span className="text-2xl font-bold text-primary">Braintree bricklaying</span>
           </div>
           
           {/* Desktop Navigation */}

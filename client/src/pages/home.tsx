@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <title>BraintreeBricklayer - Professional Bricklaying Services</title>
+      <title>Braintree bricklaying - Professional Bricklaying Services</title>
       <meta name="description" content="Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience. Free quotes available." />
       
       <Navigation />

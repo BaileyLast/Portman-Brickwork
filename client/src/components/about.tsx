@@ -38,7 +38,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="section-fade">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Why Choose BraintreeBricklayer?
+              Why Choose Braintree bricklaying?
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               With over 15 years of experience in the construction industry, we've built our reputation on quality workmanship, reliability, and customer satisfaction. Every project, big or small, receives our full attention to detail.

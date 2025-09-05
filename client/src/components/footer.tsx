@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Hammer className="text-primary text-xl" />
-              <span className="text-xl font-bold">BraintreeBricklayer</span>
+              <span className="text-xl font-bold">Braintree bricklaying</span>
             </div>
             <p className="text-gray-300 text-sm mb-4">
               Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
@@ -84,7 +84,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@braintreebricklayer.com</span>
+                <span>info@braintreebricklaying.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -138,7 +138,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            &copy; 2024 BraintreeBricklayer. All rights reserved. | Licensed & Insured Professional Bricklaying Services
+            &copy; 2024 Braintree bricklaying. All rights reserved. | Licensed & Insured Professional Bricklaying Services
           </p>
         </div>
       </div>

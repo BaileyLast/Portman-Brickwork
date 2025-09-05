@@ -186,7 +186,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                      <p className="text-muted-foreground">info@braintreebricklayer.com</p>
+                      <p className="text-muted-foreground">info@braintreebricklaying.com</p>
                       <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
                     </div>
                   </div>
