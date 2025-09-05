@@ -1,0 +1,121 @@
+import { useState } from "react";
+import { Hammer, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export default function Navigation() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  return (
+    <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          <div className="flex items-center space-x-2">
+            <Hammer className="text-primary text-2xl" />
+            <span className="text-2xl font-bold text-primary">BraintreeBricklayer</span>
+          </div>
+          
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <button 
+              onClick={() => scrollToSection('home')}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              data-testid="nav-home"
+            >
+              Home
+            </button>
+            <button 
+              onClick={() => scrollToSection('services')}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              data-testid="nav-services"
+            >
+              Services
+            </button>
+            <button 
+              onClick={() => scrollToSection('portfolio')}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              data-testid="nav-portfolio"
+            >
+              Portfolio
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              data-testid="nav-about"
+            >
+              About
+            </button>
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              data-testid="nav-quote"
+            >
+              Get Quote
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            data-testid="mobile-menu-toggle"
+          >
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </Button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <div className="flex flex-col space-y-4">
+              <button 
+                onClick={() => scrollToSection('home')}
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+                data-testid="mobile-nav-home"
+              >
+                Home
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+                data-testid="mobile-nav-services"
+              >
+                Services
+              </button>
+              <button 
+                onClick={() => scrollToSection('portfolio')}
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+                data-testid="mobile-nav-portfolio"
+              >
+                Portfolio
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+                data-testid="mobile-nav-about"
+              >
+                About
+              </button>
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                data-testid="mobile-nav-quote"
+              >
+                Get Quote
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
