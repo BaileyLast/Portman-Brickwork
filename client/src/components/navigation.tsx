@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Hammer, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "wouter";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -24,20 +26,20 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
+            <Link 
+              href="/"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-home"
             >
               Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
+            </Link>
+            <Link 
+              href="/services"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-services"
             >
               Services
-            </button>
+            </Link>
             <button 
               onClick={() => scrollToSection('portfolio')}
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -77,20 +79,22 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('home')}
+              <Link 
+                href="/"
                 className="text-left text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
                 data-testid="mobile-nav-home"
               >
                 Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('services')}
+              </Link>
+              <Link 
+                href="/services"
                 className="text-left text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
                 data-testid="mobile-nav-services"
               >
                 Services
-              </button>
+              </Link>
               <button 
                 onClick={() => scrollToSection('portfolio')}
                 className="text-left text-muted-foreground hover:text-primary transition-colors"

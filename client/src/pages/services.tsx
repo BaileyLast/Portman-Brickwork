@@ -1,14 +1,10 @@
 import Navigation from "@/components/navigation";
-import Hero from "@/components/hero";
-import Portfolio from "@/components/portfolio";
-import About from "@/components/about";
-import Testimonials from "@/components/testimonials";
-import Contact from "@/components/contact";
+import Services from "@/components/services";
 import Footer from "@/components/footer";
 import FloatingCTA from "@/components/floating-cta";
 import { useEffect } from "react";
 
-export default function Home() {
+export default function ServicesPage() {
   useEffect(() => {
     // Intersection Observer for fade-in animations
     const observerOptions = {
@@ -33,15 +29,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <title>Braintree bricklaying - Professional Bricklaying Services</title>
-      <meta name="description" content="Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience. Free quotes available." />
+      <title>Services - Braintree bricklaying</title>
+      <meta name="description" content="Comprehensive bricklaying services in Braintree. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced." />
       
       <Navigation />
-      <Hero />
-      <Portfolio />
-      <About />
-      <Testimonials />
-      <Contact />
+      <div className="pt-20">
+        <Services />
+      </div>
       <Footer />
       <FloatingCTA />
     </div>
