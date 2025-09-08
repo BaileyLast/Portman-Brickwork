@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Expert Brickwork<br />
-            <span className="text-accent">Built to Last</span>
+            <span className="text-secondary">Built to Last</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
