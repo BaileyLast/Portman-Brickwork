@@ -10,39 +10,63 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const serviceDetails = [
   {
-    category: "Residential Services",
-    description: "Professional bricklaying for your home projects",
+    category: "Brickwork & Walls",
+    description: "Decorative and structural walls for your property",
     services: [
-      "House extensions and additions",
-      "Garden walls and boundaries", 
-      "Brick driveways and pathways",
-      "Patio and outdoor living areas",
-      "Chimney construction and repair",
-      "Brick facades and feature walls"
+      "Garden walls (decorative & structural)",
+      "Boundary walls / fencing bases",
+      "Retaining walls",
+      "Feature walls and decorative brickwork"
     ]
   },
   {
-    category: "Commercial Services", 
-    description: "Large-scale projects for businesses and developments",
+    category: "Extensions & Home Builds", 
+    description: "Brickwork for home extensions and new builds",
     services: [
-      "Office building construction",
-      "Retail space development",
-      "Industrial facility walls",
-      "Multi-unit residential buildings",
-      "School and public buildings",
-      "Warehouse and storage facilities"
+      "House extensions (brickwork only)",
+      "Conservatory bases",
+      "Garage builds",
+      "Single-storey and two-storey extensions"
     ]
   },
   {
-    category: "Repair & Restoration",
-    description: "Expert restoration of existing brickwork",
+    category: "Repairs & Maintenance",
+    description: "Expert restoration and repair of existing brickwork",
     services: [
-      "Brick repointing and mortar repair",
-      "Crack repair and structural fixes",
-      "Historic building restoration",
-      "Weathering and damage repair",
-      "Foundation wall repairs",
-      "Chimney rebuilding and maintenance"
+      "Repointing (renewing mortar joints)",
+      "Brick repairs (damaged/cracked bricks replaced)",
+      "Wall strengthening & restoration",
+      "Chimney repairs/rebuilds"
+    ]
+  },
+  {
+    category: "Outdoor & Garden Features",
+    description: "Beautiful brick features for your outdoor spaces",
+    services: [
+      "BBQ areas, planters, decorative walls",
+      "Brick steps & pathways",
+      "Garden seating areas",
+      "Raised flower beds and planters"
+    ]
+  },
+  {
+    category: "Driveways & Hard Landscaping",
+    description: "Durable brick and block paving solutions",
+    services: [
+      "Brick/block paved driveways",
+      "Edging & kerbing",
+      "Patio areas and walkways",
+      "Entrance features and gateways"
+    ]
+  },
+  {
+    category: "Specialist Work",
+    description: "Bespoke and decorative brickwork projects",
+    services: [
+      "Decorative brickwork / patterns",
+      "Arches, pillars & bespoke features",
+      "Traditional lime mortar work",
+      "Heritage and period property work"
     ]
   }
 ];
