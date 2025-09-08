@@ -112,8 +112,8 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen">
-      <title>About Us - Braintree bricklaying</title>
-      <meta name="description" content="Learn about Braintree bricklaying - 15+ years of professional bricklaying services. Meet our experienced team and discover our commitment to quality." />
+      <title>About Us - Portman Brickwork</title>
+      <meta name="description" content="Learn about Portman Brickwork - 15+ years of professional bricklaying services. Meet our experienced team and discover our commitment to quality." />
       
       <Navigation />
       
@@ -122,7 +122,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center section-fade">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              About Braintree bricklaying
+              About Portman Brickwork
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Building Braintree's future, one brick at a time. Discover our story, meet our team, and learn why we're the trusted choice for quality brickwork.
@@ -140,7 +140,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Founded in 2009, Braintree bricklaying began as a small family business with a simple mission: to provide exceptional bricklaying services that stand the test of time. What started with one passionate craftsman has grown into a trusted team of skilled professionals.
+                Founded in 2009, Portman Brickwork began as a small family business with a simple mission: to provide exceptional bricklaying services that stand the test of time. What started with one passionate craftsman has grown into a trusted team of skilled professionals.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
                 Over the years, we've had the privilege of working on hundreds of projects throughout Braintree and surrounding areas. From intimate residential gardens to large commercial developments, each project has strengthened our reputation for quality, reliability, and craftsmanship.
@@ -283,7 +283,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center section-fade">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              Why Choose Braintree bricklaying?
+              Why Choose Portman Brickwork?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
               <div className="flex items-start space-x-3">

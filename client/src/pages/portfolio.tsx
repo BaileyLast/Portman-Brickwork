@@ -134,8 +134,8 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen">
-      <title>Portfolio - Braintree bricklaying</title>
-      <meta name="description" content="View our portfolio of completed bricklaying projects in Braintree. Residential, commercial, and restoration work showcasing quality craftsmanship." />
+      <title>Portfolio - Portman Brickwork</title>
+      <meta name="description" content="View Portman Brickwork's portfolio of completed bricklaying projects in Braintree. Residential, commercial, and restoration work showcasing quality craftsmanship." />
       
       <Navigation />
       

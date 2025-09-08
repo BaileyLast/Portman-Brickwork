@@ -15,10 +15,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Hammer className="text-primary text-xl" />
-              <span className="text-xl font-bold">Braintree bricklaying</span>
+              <span className="text-xl font-bold">Portman Brickwork</span>
             </div>
             <p className="text-gray-300 text-sm mb-4">
-              Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
+              Professional bricklaying services by Portman Brickwork in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-primary transition-colors" data-testid="social-facebook">

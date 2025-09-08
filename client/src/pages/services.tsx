@@ -106,8 +106,8 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen">
-      <title>Services - Braintree bricklaying</title>
-      <meta name="description" content="Comprehensive bricklaying services in Braintree. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced." />
+      <title>Services - Portman Brickwork</title>
+      <meta name="description" content="Comprehensive bricklaying services by Portman Brickwork in Braintree. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced." />
       
       <Navigation />
       
@@ -180,7 +180,7 @@ export default function ServicesPage() {
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 section-fade">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Braintree bricklaying?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Portman Brickwork?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We combine traditional craftsmanship with modern techniques to deliver superior results.
             </p>

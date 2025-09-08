@@ -1,8 +1,8 @@
-# Braintree Bricklayer Website
+# Portman Brickwork Website
 
 ## Overview
 
-This is a professional business website for a bricklaying company serving Braintree and surrounding areas. The application features a modern, responsive design built as a single-page application showcasing services, portfolio, testimonials, and contact functionality. The site emphasizes lead generation through multiple contact methods and provides a comprehensive overview of bricklaying services offered.
+This is a professional business website for Portman Brickwork, a bricklaying company serving Braintree and surrounding areas. The application features a modern, responsive design built as a single-page application showcasing services, portfolio, testimonials, and contact functionality. The site emphasizes lead generation through multiple contact methods and provides a comprehensive overview of bricklaying services offered.
 
 ## User Preferences
 
@@ -16,7 +16,7 @@ Preferred communication style: Simple, everyday language.
 - **UI Framework**: Tailwind CSS with shadcn/ui component library for consistent, accessible design
 - **State Management**: React Query (@tanstack/react-query) for server state management and API calls
 - **Form Handling**: React Hook Form with Zod validation for type-safe form processing
-- **Styling**: Custom CSS variables with warm color scheme (browns, oranges) appropriate for construction industry
+- **Styling**: Custom CSS variables with Ipswich Town FC color scheme (blue and red) matching company branding
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js RESTful API

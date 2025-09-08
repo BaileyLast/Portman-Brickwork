@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Hammer, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
+import logoImage from "@assets/Portman Brickwork Logo _1757353034829.png";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,9 +20,14 @@ export default function Navigation() {
     <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
-            <Hammer className="text-primary text-2xl" />
-            <span className="text-2xl font-bold text-primary">Braintree bricklaying</span>
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center" data-testid="nav-logo">
+              <img 
+                src={logoImage} 
+                alt="Portman Brickwork" 
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
