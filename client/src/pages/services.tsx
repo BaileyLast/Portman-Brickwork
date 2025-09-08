@@ -136,31 +136,79 @@ export default function ServicesPage() {
       <Navigation />
       
       {/* Services Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center section-fade">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Professional Bricklaying Services
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              From residential projects to commercial builds, we deliver exceptional quality and craftsmanship with every brick we lay.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={handleCall}
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg h-auto"
-                data-testid="services-call-button"
-              >
-                <Phone className="mr-2" />
-                Call: (123) 456-7890
-              </Button>
-              <Button
-                onClick={scrollToContact}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg h-auto"
-                data-testid="services-quote-button"
-              >
-                Get Free Quote
-              </Button>
+      <section className="relative pt-24 pb-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+        {/* Brick pattern overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h30v30H0zM30 30h30v30H30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '60px 60px'
+          }} />
+        </div>
+        
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Main content */}
+            <div className="section-fade">
+              <div className="inline-block px-4 py-2 bg-secondary/20 rounded-full mb-6">
+                <span className="text-secondary font-medium">Our Services</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Complete 
+                <span className="block text-secondary">Bricklaying</span>
+                Solutions
+              </h1>
+              <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+                From garden walls to house extensions, we bring your vision to life with expert craftsmanship and attention to detail.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  onClick={handleCall}
+                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg h-auto"
+                  data-testid="services-call-button"
+                >
+                  <Phone className="mr-2" />
+                  Call: (123) 456-7890
+                </Button>
+                <Button
+                  onClick={scrollToContact}
+                  variant="outline"
+                  className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg h-auto"
+                  data-testid="services-quote-button"
+                >
+                  Get Free Quote
+                </Button>
+              </div>
+            </div>
+            
+            {/* Right side - Service highlights */}
+            <div className="section-fade">
+              <div className="grid grid-cols-2 gap-4">
+                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-secondary mb-2">6</div>
+                    <div className="text-sm text-slate-300">Service Categories</div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-secondary mb-2">24+</div>
+                    <div className="text-sm text-slate-300">Specialist Services</div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-secondary mb-2">15+</div>
+                    <div className="text-sm text-slate-300">Years Experience</div>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-secondary mb-2">100%</div>
+                    <div className="text-sm text-slate-300">Quality Guarantee</div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
