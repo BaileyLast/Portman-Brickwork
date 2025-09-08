@@ -25,7 +25,7 @@ export default function Navigation() {
               <img 
                 src={logoImage} 
                 alt="Portman Brickwork" 
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
           </div>
