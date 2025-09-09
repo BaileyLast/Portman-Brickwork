@@ -227,19 +227,19 @@ export default function Contact() {
 
             <Card className="bg-card shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-4">Certifications</h3>
+                <h3 className="text-xl font-semibold mb-4">Why Choose Us</h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Tag className="text-primary h-5 w-5" />
-                    <span className="text-sm">Licensed General Contractor</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
                     <Shield className="text-primary h-5 w-5" />
-                    <span className="text-sm">Fully Insured & Bonded</span>
+                    <span className="text-sm">Fully Insured & Protected</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Award className="text-primary h-5 w-5" />
-                    <span className="text-sm">Better Business Bureau A+ Rating</span>
+                    <span className="text-sm">Expertise Since 1976</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Tag className="text-primary h-5 w-5" />
+                    <span className="text-sm">Free Quotes & Estimates</span>
                   </div>
                 </div>
               </CardContent>

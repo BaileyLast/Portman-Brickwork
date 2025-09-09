@@ -14,7 +14,7 @@ const teamMembers = [
     experience: "20+ Years",
     description: "Certified master craftsman specializing in heritage restoration and modern construction techniques.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-    certifications: ["Master Bricklayer Certification", "Heritage Building Specialist", "Safety Training Certified"]
+    specialties: ["Heritage Restoration", "Structural Brickwork", "Traditional Techniques"]
   },
   {
     name: "Michael Davies",
@@ -22,7 +22,7 @@ const teamMembers = [
     experience: "12+ Years", 
     description: "Expert in commercial and residential projects with extensive experience in complex structural work.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-    certifications: ["Advanced Bricklaying Qualification", "Commercial Construction License", "First Aid Certified"]
+    specialties: ["Commercial Projects", "Residential Extensions", "Complex Structures"]
   },
   {
     name: "David Wilson",
@@ -30,7 +30,7 @@ const teamMembers = [
     experience: "15+ Years",
     description: "Ensures quality control and project management across all residential and commercial builds.",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-    certifications: ["Project Management Certified", "Quality Control Specialist", "Building Regulations Expert"]
+    specialties: ["Project Management", "Quality Control", "Building Standards"]
   }
 ];
 
@@ -53,7 +53,7 @@ const values = [
   {
     icon: Award,
     title: "Professional Excellence",
-    description: "Continuous learning and certification to deliver industry-leading bricklaying services."
+    description: "Decades of experience and continuous improvement to deliver exceptional bricklaying services."
   }
 ];
 
@@ -233,10 +233,10 @@ export default function AboutPage() {
                   <p className="text-muted-foreground text-sm mb-4">{member.experience}</p>
                   <p className="text-muted-foreground text-sm mb-4">{member.description}</p>
                   <div className="space-y-2">
-                    {member.certifications.map((cert, certIndex) => (
-                      <div key={certIndex} className="flex items-center text-xs text-muted-foreground">
+                    {member.specialties.map((specialty, specialtyIndex) => (
+                      <div key={specialtyIndex} className="flex items-center text-xs text-muted-foreground">
                         <Check className="text-primary mr-2 h-3 w-3" />
-                        {cert}
+                        {specialty}
                       </div>
                     ))}
                   </div>
@@ -247,13 +247,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Achievements & Certifications */}
+      {/* Achievements */}
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 section-fade">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Achievements</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Recognition and certifications that demonstrate our commitment to excellence and professionalism.
+              What sets us apart and demonstrates our commitment to excellence and professionalism.
             </p>
           </div>
 
