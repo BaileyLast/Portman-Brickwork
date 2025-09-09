@@ -13,7 +13,7 @@
   --popover-foreground: hsl(218, 11%, 15%);
   --primary: hsl(208, 100%, 40%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(0, 75%, 50%);
+  --secondary: hsl(355, 85%, 45%);
   --secondary-foreground: hsl(0, 0%, 98%);
   --muted: hsl(210, 40%, 96%);
   --muted-foreground: hsl(218, 11%, 44%);
@@ -25,9 +25,9 @@
   --input: hsl(214, 32%, 91%);
   --ring: hsl(208, 100%, 40%);
   --chart-1: hsl(208, 100%, 40%);
-  --chart-2: hsl(0, 75%, 50%);
+  --chart-2: hsl(355, 85%, 45%);
   --chart-3: hsl(208, 100%, 60%);
-  --chart-4: hsl(0, 75%, 70%);
+  --chart-4: hsl(355, 85%, 65%);
   --chart-5: hsl(208, 100%, 80%);
   --sidebar: hsl(0, 0%, 98%);
   --sidebar-foreground: hsl(218, 11%, 15%);
@@ -52,13 +52,13 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Ipswich Town FC color theme additions */
+  /* Portman Brickwork brand colors (matching logo) */
   --itfc-blue: hsl(208, 100%, 40%);
   --itfc-blue-light: hsl(208, 100%, 60%);
   --itfc-blue-dark: hsl(208, 100%, 25%);
-  --itfc-red: hsl(0, 75%, 50%);
-  --itfc-red-light: hsl(0, 75%, 70%);
-  --itfc-red-dark: hsl(0, 75%, 35%);
+  --itfc-red: hsl(355, 85%, 45%);
+  --itfc-red-light: hsl(355, 85%, 65%);
+  --itfc-red-dark: hsl(355, 85%, 30%);
 }
 
 .dark {
@@ -70,7 +70,7 @@
   --popover-foreground: hsl(0, 0%, 95%);
   --primary: hsl(208, 100%, 50%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(0, 75%, 55%);
+  --secondary: hsl(355, 85%, 50%);
   --secondary-foreground: hsl(0, 0%, 98%);
   --muted: hsl(218, 11%, 15%);
   --muted-foreground: hsl(218, 11%, 65%);
