@@ -26,9 +26,7 @@ export default function Hero() {
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Expert Brickwork<br />
-            <span className="inline-block" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0px 0px 16px rgba(0,0,0,0.6)' }}>
-              <span className="text-secondary">Built</span> <span className="text-white">to Last</span>
-            </span>
+            <span className="text-secondary inline-block" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0px 0px 16px rgba(0,0,0,0.6)' }}>Built To Last</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Professional bricklaying services across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976.
