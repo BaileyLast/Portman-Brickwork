@@ -1,6 +1,5 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import brickBackground from "@assets/Brickwork design_1757414913225.png";
 
 export default function Hero() {
   const handleCall = () => {
@@ -27,19 +26,7 @@ export default function Hero() {
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Expert Brickwork<br />
-            <span 
-              className="text-white px-6 py-2 rounded-lg inline-block" 
-              style={{
-                backgroundImage: `url(${brickBackground})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'repeat',
-                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
-                boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.3)'
-              }}
-            >
-              Built to Last
-            </span>
+            <span className="text-white px-6 py-2 rounded-lg inline-block brick-background">Built to Last</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
