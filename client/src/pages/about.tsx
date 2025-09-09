@@ -70,8 +70,8 @@ const achievements = [
   },
   {
     icon: Users,
-    title: "Local Community Leaders",
-    description: "Active members of Braintree business community for over 15 years."
+    title: "Regional Community Leaders",
+    description: "Active in Essex, Suffolk, and East Anglia business communities for nearly 50 years."
   },
   {
     icon: Clock,
@@ -113,7 +113,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       <title>About Us - Portman Brickwork</title>
-      <meta name="description" content="Learn about Portman Brickwork - 15+ years of professional bricklaying services. Meet our experienced team and discover our commitment to quality." />
+      <meta name="description" content="Learn about Portman Brickwork - expertise in bricklaying since 1976. Serving Essex, Suffolk, and East Anglia with nearly 50 years of professional craftsmanship." />
       
       <Navigation />
       
@@ -125,7 +125,7 @@ export default function AboutPage() {
               About Portman Brickwork
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Building Braintree's future, one brick at a time. Discover our story, meet our team, and learn why we're the trusted choice for quality brickwork.
+              Building across Essex, Suffolk, and East Anglia since 1976. Discover our story, meet our team, and learn why we're the trusted choice for quality brickwork.
             </p>
           </div>
         </div>
@@ -140,13 +140,13 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Founded in 2009, Portman Brickwork began as a small family business with a simple mission: to provide exceptional bricklaying services that stand the test of time. What started with one passionate craftsman has grown into a trusted team of skilled professionals.
+                Established in 1976, Portman Brickwork began as a small family business with a simple mission: to provide exceptional bricklaying services that stand the test of time. What started with one passionate craftsman has grown into a trusted team of skilled professionals over nearly five decades.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Over the years, we've had the privilege of working on hundreds of projects throughout Braintree and surrounding areas. From intimate residential gardens to large commercial developments, each project has strengthened our reputation for quality, reliability, and craftsmanship.
+                Over the years, we've had the privilege of working on hundreds of projects throughout Essex, Suffolk, and East Anglia. From intimate residential gardens to commercial developments, each project has strengthened our reputation for quality, reliability, and craftsmanship.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Today, we're proud to be recognized as one of Braintree's leading bricklaying specialists, but we haven't forgotten our roots. We still approach every project with the same dedication, attention to detail, and personal service that built our reputation.
+                Today, we're proud to be recognized as one of the region's leading bricklaying specialists, but we haven't forgotten our roots. We still approach every project with the same dedication, attention to detail, and personal service that built our reputation since 1976.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -289,8 +289,8 @@ export default function AboutPage() {
               <div className="flex items-start space-x-3">
                 <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold mb-2">Local Expertise</h3>
-                  <p className="text-muted-foreground text-sm">Deep understanding of Braintree's architectural styles and building requirements.</p>
+                  <h3 className="font-semibold mb-2">Regional Expertise</h3>
+                  <p className="text-muted-foreground text-sm">Deep understanding of Essex, Suffolk, and East Anglian architectural styles and building requirements.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">

@@ -29,7 +29,7 @@ export default function Hero() {
             <span className="text-white bg-secondary px-6 py-2 rounded-lg inline-block">Built to Last</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-            Professional bricklaying services in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
+            Professional bricklaying services across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button

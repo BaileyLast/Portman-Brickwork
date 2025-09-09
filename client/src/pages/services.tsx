@@ -74,7 +74,7 @@ const serviceDetails = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: "15+ Years Experience",
+    title: "Expertise Since 1976",
     description: "Proven track record with hundreds of completed projects"
   },
   {
@@ -131,7 +131,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       <title>Services - Portman Brickwork</title>
-      <meta name="description" content="Comprehensive bricklaying services by Portman Brickwork in Braintree. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced." />
+      <meta name="description" content="Comprehensive bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced." />
       
       <Navigation />
       
@@ -198,7 +198,7 @@ export default function ServicesPage() {
                 </Card>
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
                   <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-secondary mb-2">15+</div>
+                    <div className="text-3xl font-bold text-secondary mb-2">48+</div>
                     <div className="text-sm text-slate-300">Years Experience</div>
                   </CardContent>
                 </Card>

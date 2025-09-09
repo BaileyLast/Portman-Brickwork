@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <title>Portman Brickwork - Professional Bricklaying Services</title>
-      <meta name="description" content="Professional bricklaying services by Portman Brickwork in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience. Free quotes available." />
+      <meta name="description" content="Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976. Free quotes available." />
       
       <Navigation />
       <Hero />

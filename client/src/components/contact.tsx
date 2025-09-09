@@ -197,7 +197,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Service Area</h4>
-                      <p className="text-muted-foreground">Braintree & Surrounding Areas</p>
+                      <p className="text-muted-foreground">Essex, Suffolk & East Anglia</p>
                       <p className="text-sm text-muted-foreground">Within 25 miles radius</p>
                     </div>
                   </div>

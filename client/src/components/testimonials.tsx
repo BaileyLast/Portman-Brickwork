@@ -6,7 +6,7 @@ const testimonials = [
     rating: 5,
     text: "Outstanding workmanship! The team completed our garden wall project on time and within budget. The attention to detail was exceptional.",
     author: "Sarah Mitchell",
-    role: "Braintree Resident",
+    role: "Essex Resident",
     initials: "SM"
   },
   {
@@ -32,7 +32,7 @@ export default function Testimonials() {
         <div className="text-center mb-16 section-fade">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">What Our Customers Say</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it - hear from satisfied customers across Braintree.
+            Don't just take our word for it - hear from satisfied customers across Essex, Suffolk, and East Anglia.
           </p>
         </div>
 

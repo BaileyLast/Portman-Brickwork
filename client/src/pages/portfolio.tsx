@@ -12,7 +12,7 @@ const portfolioProjects = [
     id: 1,
     title: "Modern Residential Extension",
     category: "Residential",
-    location: "Braintree Center",
+    location: "Colchester, Essex",
     date: "2024",
     description: "Complete brick extension with contemporary design featuring matching mortar and precision pointing.",
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
@@ -27,7 +27,7 @@ const portfolioProjects = [
     id: 2,
     title: "Commercial Office Building",
     category: "Commercial",
-    location: "Braintree Business Park",
+    location: "Ipswich, Suffolk",
     date: "2024",
     description: "Large-scale commercial project with mixed brick patterns and architectural detailing.",
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
@@ -42,7 +42,7 @@ const portfolioProjects = [
     id: 3,
     title: "Heritage Garden Wall",
     category: "Residential",
-    location: "Historic Braintree",
+    location: "Norwich, Norfolk",
     date: "2024",
     description: "Restoration of Victorian-era garden boundary wall using traditional techniques and materials.",
     image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
@@ -57,7 +57,7 @@ const portfolioProjects = [
     id: 4,
     title: "Premium Brick Driveway",
     category: "Residential",
-    location: "Braintree Heights",
+    location: "Chelmsford, Essex",
     date: "2023",
     description: "Luxury driveway installation with herringbone pattern and professional edging work.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
@@ -72,7 +72,7 @@ const portfolioProjects = [
     id: 5,
     title: "Industrial Warehouse Facade",
     category: "Commercial",
-    location: "Braintree Industrial Estate",
+    location: "Bury St Edmunds, Suffolk",
     date: "2023",
     description: "Robust industrial brickwork with reinforced structural elements and weatherproofing.",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
@@ -87,7 +87,7 @@ const portfolioProjects = [
     id: 6,
     title: "Historic Church Restoration",
     category: "Restoration",
-    location: "Central Braintree",
+    location: "Great Yarmouth, Norfolk",
     date: "2023",
     description: "Careful restoration of 18th-century church walls preserving historical integrity.",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
@@ -135,7 +135,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen">
       <title>Portfolio - Portman Brickwork</title>
-      <meta name="description" content="View Portman Brickwork's portfolio of completed bricklaying projects in Braintree. Residential, commercial, and restoration work showcasing quality craftsmanship." />
+      <meta name="description" content="View Portman Brickwork's portfolio of completed bricklaying projects across Essex, Suffolk, and East Anglia. Residential, commercial, and restoration work showcasing quality craftsmanship." />
       
       <Navigation />
       
@@ -147,7 +147,7 @@ export default function PortfolioPage() {
               Our Portfolio
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Showcasing our finest bricklaying projects across Braintree and surrounding areas. From residential homes to commercial buildings.
+              Showcasing our finest bricklaying projects across Essex, Suffolk, and East Anglia. From residential homes to commercial buildings.
             </p>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function PortfolioPage() {
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
             <div className="section-fade">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary mb-2">48+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div className="section-fade">

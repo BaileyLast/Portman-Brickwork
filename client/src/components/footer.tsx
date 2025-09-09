@@ -18,7 +18,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Portman Brickwork</span>
             </div>
             <p className="text-gray-300 text-sm mb-4">
-              Professional bricklaying services by Portman Brickwork in Braintree and surrounding areas. Quality craftsmanship with over 15 years of experience.
+              Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-primary transition-colors" data-testid="social-facebook">
@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Braintree & Surrounding Areas</span>
+                <span>Essex, Suffolk & East Anglia</span>
               </li>
             </ul>
           </div>
@@ -138,7 +138,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            &copy; 2024 Braintree bricklaying. All rights reserved. | Licensed & Insured Professional Bricklaying Services
+            &copy; 2024 Portman Brickwork. All rights reserved. | Licensed & Insured Professional Bricklaying Services
           </p>
         </div>
       </div>

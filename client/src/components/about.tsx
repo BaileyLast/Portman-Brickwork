@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "15+ Years Experience",
-    description: "Extensive experience in residential and commercial bricklaying projects."
+    title: "Expertise Since 1976",
+    description: "Nearly 50 years of specialist bricklaying experience across residential and commercial projects."
   },
   {
     title: "Fully Insured & Licensed",
@@ -15,8 +15,8 @@ const features = [
     description: "We stand behind our work with comprehensive warranties on all projects."
   },
   {
-    title: "Local Expertise",
-    description: "Deep knowledge of Braintree area building requirements and local materials."
+    title: "Regional Expertise",
+    description: "Serving Essex, Suffolk, and throughout East Anglia with local building knowledge."
   }
 ];
 
@@ -41,7 +41,7 @@ export default function About() {
               Why Choose Portman Brickwork?
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              With over 15 years of experience in the construction industry, we've built our reputation on quality workmanship, reliability, and customer satisfaction. Every project, big or small, receives our full attention to detail.
+              With expertise in bricklaying since 1976, we've built our reputation on quality workmanship, reliability, and customer satisfaction across Essex, Suffolk, and East Anglia. Every project, big or small, receives our full attention to detail.
             </p>
             
             <div className="space-y-4 mb-8">
