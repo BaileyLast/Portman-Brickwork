@@ -136,7 +136,16 @@ export default function ServicesPage() {
       <Navigation />
       
       {/* Services Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+      <section className="relative pt-24 pb-16 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center" 
+          style={{ 
+            backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')" 
+          }}
+        />
+        {/* Blue Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-primary/80" />
         {/* Brick pattern overlay */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
