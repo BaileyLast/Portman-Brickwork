@@ -1,4 +1,5 @@
-import { Hammer, Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import logoImage from "@assets/Portman Brickwork Logo _1757353034829.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -13,9 +14,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Hammer className="text-primary text-xl" />
-              <span className="text-xl font-bold">Portman Brickwork</span>
+            <div className="mb-4">
+              <img 
+                src={logoImage} 
+                alt="Portman Brickwork" 
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-gray-300 text-sm mb-4">
               Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976.
