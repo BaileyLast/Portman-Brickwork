@@ -145,7 +145,7 @@ export default function ServicesPage() {
           }}
         />
         {/* Blue Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-primary/80" />
+        <div className="hero-bg absolute inset-0" />
         {/* Brick pattern overlay */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
