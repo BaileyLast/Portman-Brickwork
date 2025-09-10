@@ -19,6 +19,7 @@ export default function Footer() {
                 src={logoImage} 
                 alt="Portman Brickwork" 
                 className="h-16 w-auto"
+                style={{ mixBlendMode: 'multiply' }}
               />
             </div>
             <p className="text-gray-300 text-sm mb-4">
