@@ -26,6 +26,7 @@ export default function Navigation() {
                 src={logoImage} 
                 alt="Portman Brickwork" 
                 className="h-24 w-auto"
+                style={{ mixBlendMode: 'multiply' }}
               />
             </Link>
           </div>
