@@ -175,7 +175,7 @@ export default function ServicesPage() {
                 <Button
                   onClick={scrollToContact}
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg h-auto"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg h-auto"
                   data-testid="services-quote-button"
                 >
                   Get Free Quote
