@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
-import logoImage from "@assets/Portman Brickwork Logo _1757353034829.png";
+import logoImage from "@assets/Portman Brickwork Logo _1757687758603.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -19,7 +19,6 @@ export default function Footer() {
                 src={logoImage} 
                 alt="Portman Brickwork" 
                 className="h-16 w-auto"
-                style={{ mixBlendMode: 'multiply' }}
               />
             </div>
             <p className="text-gray-300 text-sm mb-4">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
-import logoImage from "@assets/Portman Brickwork Logo _1757353034829.png";
+import logoImage from "@assets/Portman Brickwork Logo _1757687758603.png";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,7 +26,6 @@ export default function Navigation() {
                 src={logoImage} 
                 alt="Portman Brickwork" 
                 className="h-24 w-auto"
-                style={{ mixBlendMode: 'multiply' }}
               />
             </Link>
           </div>
