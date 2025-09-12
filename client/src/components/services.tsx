@@ -1,43 +1,67 @@
-import { Home, Building, Wrench, Shield, Palette, Calculator, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import brandDesign from "@assets/Portman Brickwork brick design_1757687674824.png";
 
-const services = [
+const serviceDetails = [
   {
-    icon: Home,
-    title: "Residential Bricklaying",
-    description: "Professional bricklaying for homes, garden walls, driveways, and residential extensions.",
-    features: ["House extensions", "Garden walls", "Driveways"]
+    category: "Brickwork & Walls",
+    description: "Decorative and structural walls for your property",
+    services: [
+      "Garden walls (decorative & structural)",
+      "Boundary walls / fencing bases",
+      "Retaining walls",
+      "Feature walls and decorative brickwork"
+    ]
   },
   {
-    icon: Building,
-    title: "Commercial Projects",
-    description: "Large-scale commercial bricklaying for offices, retail spaces, and industrial buildings.",
-    features: ["Office buildings", "Retail spaces", "Industrial projects"]
+    category: "Extensions & Home Builds", 
+    description: "Brickwork for home extensions and new builds",
+    services: [
+      "House extensions (brickwork only)",
+      "Conservatory bases",
+      "Garage builds",
+      "Single-storey and two-storey extensions"
+    ]
   },
   {
-    icon: Wrench,
-    title: "Repairs & Restoration",
-    description: "Expert repair and restoration services for damaged or aging brickwork structures.",
-    features: ["Repointing", "Crack repairs", "Historic restoration"]
+    category: "Repairs & Maintenance",
+    description: "Expert restoration and repair of existing brickwork",
+    services: [
+      "Repointing (renewing mortar joints)",
+      "Brick repairs (damaged/cracked bricks replaced)",
+      "Wall strengthening & restoration",
+      "Chimney repairs/rebuilds"
+    ]
   },
   {
-    icon: Shield,
-    title: "Structural Work",
-    description: "Reliable structural brickwork for foundations, load-bearing walls, and support structures.",
-    features: ["Load-bearing walls", "Foundation work", "Support structures"]
+    category: "Outdoor & Garden Features",
+    description: "Beautiful brick features for your outdoor spaces",
+    services: [
+      "BBQ areas, planters, decorative walls",
+      "Brick steps & pathways",
+      "Garden seating areas",
+      "Raised flower beds and planters"
+    ]
   },
   {
-    icon: Palette,
-    title: "Decorative Brickwork",
-    description: "Artistic and decorative brickwork to enhance the aesthetic appeal of your property.",
-    features: ["Feature walls", "Arches", "Custom patterns"]
+    category: "Driveways & Hard Landscaping",
+    description: "Durable brick and block paving solutions",
+    services: [
+      "Brick/block paved driveways",
+      "Edging & kerbing",
+      "Patio areas and walkways",
+      "Entrance features and gateways"
+    ]
   },
   {
-    icon: Calculator,
-    title: "Consultation & Quotes",
-    description: "Professional consultation and detailed quotes for all your bricklaying project needs.",
-    features: ["Free quotes", "Project planning", "Material advice"]
+    category: "Specialist Work",
+    description: "Bespoke and decorative brickwork projects",
+    services: [
+      "Decorative brickwork / patterns",
+      "Arches, pillars & bespoke features",
+      "Traditional lime mortar work",
+      "Heritage and period property work"
+    ]
   }
 ];
 
@@ -64,33 +88,23 @@ export default function Services() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-            const IconComponent = service.icon;
-            return (
-              <Card 
-                key={index}
-                className="service-card bg-card shadow-lg transition-all duration-300 hover:shadow-xl section-fade"
-                data-testid={`service-card-${index}`}
-              >
-                <CardContent className="p-8">
-                  <div className="text-primary text-4xl mb-4">
-                    <IconComponent />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center">
-                        <Check className="text-primary mr-2 h-4 w-4" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="grid lg:grid-cols-3 gap-8">
+          {serviceDetails.map((category, index) => (
+            <Card key={index} className="bg-card shadow-lg section-fade" data-testid={`service-category-${index}`}>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-3">{category.category}</h3>
+                <p className="text-muted-foreground mb-6">{category.description}</p>
+                <ul className="space-y-3">
+                  {category.services.map((service, serviceIndex) => (
+                    <li key={serviceIndex} className="flex items-start space-x-3">
+                      <Check className="text-primary mt-1 h-4 w-4 flex-shrink-0" />
+                      <span className="text-sm text-muted-foreground">{service}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
