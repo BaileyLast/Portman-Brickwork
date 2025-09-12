@@ -1,5 +1,6 @@
 import { Home, Building, Wrench, Shield, Palette, Calculator, Check } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import brandDesign from "@assets/Portman Brickwork brick design_1757687674824.png";
 
 const services = [
   {
@@ -45,7 +46,19 @@ export default function Services() {
     <section id="services" className="py-16 lg:py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 section-fade">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
+          <div className="flex items-center justify-center gap-8 mb-4">
+            <img 
+              src={brandDesign} 
+              alt="Portman Brickwork Design" 
+              className="h-16 w-auto hidden sm:block"
+            />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Our Services</h2>
+            <img 
+              src={brandDesign} 
+              alt="Portman Brickwork Design" 
+              className="h-16 w-auto hidden sm:block transform scale-x-[-1]"
+            />
+          </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             From residential projects to commercial builds, we deliver exceptional bricklaying services with attention to detail.
           </p>
