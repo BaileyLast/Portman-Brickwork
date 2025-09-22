@@ -104,6 +104,18 @@ const categories = ["All", "Residential", "Commercial", "Restoration"];
 
 export default function PortfolioPage() {
   useEffect(() => {
+    // Set document title and meta description
+    document.title = "Portfolio - Portman Brickwork";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'View Portman Brickwork\'s portfolio of completed bricklaying projects across Essex, Suffolk, and East Anglia. Residential, commercial, and restoration work showcasing quality craftsmanship.');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = 'View Portman Brickwork\'s portfolio of completed bricklaying projects across Essex, Suffolk, and East Anglia. Residential, commercial, and restoration work showcasing quality craftsmanship.';
+      document.head.appendChild(newMetaDescription);
+    }
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,
@@ -134,8 +146,6 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen">
-      <title>Portfolio - Portman Brickwork</title>
-      <meta name="description" content="View Portman Brickwork's portfolio of completed bricklaying projects across Essex, Suffolk, and East Anglia. Residential, commercial, and restoration work showcasing quality craftsmanship." />
       
       <Navigation />
       

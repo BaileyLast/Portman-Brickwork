@@ -82,6 +82,18 @@ const achievements = [
 
 export default function AboutPage() {
   useEffect(() => {
+    // Set document title and meta description
+    document.title = "About Us - Portman Brickwork";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about Portman Brickwork - expertise in bricklaying since 1976. Serving Essex, Suffolk, and East Anglia with nearly 50 years of professional craftsmanship.');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = 'Learn about Portman Brickwork - expertise in bricklaying since 1976. Serving Essex, Suffolk, and East Anglia with nearly 50 years of professional craftsmanship.';
+      document.head.appendChild(newMetaDescription);
+    }
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,
@@ -112,8 +124,6 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen">
-      <title>About Us - Portman Brickwork</title>
-      <meta name="description" content="Learn about Portman Brickwork - expertise in bricklaying since 1976. Serving Essex, Suffolk, and East Anglia with nearly 50 years of professional craftsmanship." />
       
       <Navigation />
       

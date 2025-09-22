@@ -10,6 +10,18 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
+    // Set document title and meta description
+    document.title = "Portman Brickwork - Professional Bricklaying Services";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976. Free quotes available.');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = 'Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976. Free quotes available.';
+      document.head.appendChild(newMetaDescription);
+    }
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,
@@ -33,9 +45,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <title>Portman Brickwork - Professional Bricklaying Services</title>
-      <meta name="description" content="Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976. Free quotes available." />
-      
       <Navigation />
       <Hero />
       <Portfolio />

@@ -34,6 +34,18 @@ const whyChooseUs = [
 
 export default function ServicesPage() {
   useEffect(() => {
+    // Set document title and meta description
+    document.title = "Services - Portman Brickwork";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Comprehensive bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced.');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = 'Comprehensive bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced.';
+      document.head.appendChild(newMetaDescription);
+    }
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,
@@ -68,8 +80,6 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen">
-      <title>Services - Portman Brickwork</title>
-      <meta name="description" content="Comprehensive bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. From residential to commercial projects, repairs to decorative work. Professional, insured, and experienced." />
       
       <Navigation />
       
