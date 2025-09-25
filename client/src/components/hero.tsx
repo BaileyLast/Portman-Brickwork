@@ -1,11 +1,9 @@
-import { Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/1.png";
+import heroImage1 from "@assets/3.png";
+import heroImage2 from "@assets/4.png";
 
 export default function Hero() {
-  const handleCall = () => {
-    window.location.href = "tel:+1234567890";
-  };
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -15,74 +13,97 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-28">
+    <section id="home" className="relative overflow-hidden">
+      {/* Dark gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-32 min-h-[80vh]">
           {/* Content Side */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-white">
+            {/* Category Tag */}
+            <div className="inline-block">
+              <span className="text-secondary font-medium text-sm tracking-wide uppercase">
+                Professional Brickwork
+              </span>
+            </div>
+            
+            {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Expert Brickwork
-                <span className="block text-primary mt-2">Built To Last</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Building excellence
+                <br />
+                <span className="text-secondary">with expert</span>
+                <br />
+                craftsmanship
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-                Professional bricklaying services across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976.
+              
+              <p className="text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed">
+                Portman Brickwork has been delivering outstanding bricklaying services across Essex, Suffolk, and East Anglia since 1976. From residential extensions to commercial projects, we combine traditional skills with modern techniques to create structures that stand the test of time.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={handleCall}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg h-auto rounded-xl"
-                data-testid="hero-call-button"
-              >
-                <Phone className="mr-2 h-5 w-5" />
-                Call: (123) 456-7890
-              </Button>
+            {/* CTA Button */}
+            <div className="pt-4">
               <Button
                 onClick={scrollToContact}
-                variant="outline"
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg h-auto rounded-xl"
-                data-testid="hero-quote-button"
+                className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg h-auto rounded-lg group"
+                data-testid="hero-cta-button"
               >
-                Get Free Quote
+                View our work
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </div>
-            
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-6">
-              <div className="text-center">
-                <div className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">48+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">500+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">100%</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Satisfaction Rate</div>
-              </div>
             </div>
           </div>
           
-          {/* Image Side */}
+          {/* Visual Side */}
           <div className="relative lg:order-last">
-            <div className="relative">
-              <img 
-                src={heroImage} 
-                alt="Professional bricklaying construction site with quality materials and expert workmanship"
-                className="rounded-2xl shadow-2xl w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
-              />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary/20 to-transparent"></div>
+            <div className="relative grid grid-cols-2 gap-4">
+              {/* Main Image */}
+              <div className="col-span-2 mb-4">
+                <img 
+                  src={heroImage1} 
+                  alt="Professional bricklayer placing red bricks with precision"
+                  className="rounded-2xl shadow-2xl w-full h-[300px] object-cover"
+                />
+              </div>
               
-              {/* Floating Badge - positioned safely within container */}
-              <div className="absolute bottom-4 left-4 bg-card border border-border rounded-xl p-3 shadow-lg hidden sm:block">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <div>
-                    <div className="font-semibold text-sm">Available Now</div>
-                    <div className="text-xs text-muted-foreground">Free Consultations</div>
+              {/* Secondary Image */}
+              <div className="col-span-1">
+                <img 
+                  src={heroImage2} 
+                  alt="Expert brick construction with professional tools"
+                  className="rounded-xl shadow-xl w-full h-[200px] object-cover"
+                />
+              </div>
+              
+              {/* Statistics Card */}
+              <div className="col-span-1 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20" data-testid="hero-stats-card">
+                <div className="space-y-4">
+                  <div data-testid="stat-experience">
+                    <div className="text-2xl font-bold text-secondary">48+</div>
+                    <div className="text-xs text-gray-300">Years Experience</div>
                   </div>
+                  <div data-testid="stat-projects">
+                    <div className="text-2xl font-bold text-secondary">500+</div>
+                    <div className="text-xs text-gray-300">Projects Completed</div>
+                  </div>
+                  <div data-testid="stat-satisfaction">
+                    <div className="text-2xl font-bold text-secondary">100%</div>
+                    <div className="text-xs text-gray-300">Customer Satisfaction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Floating Contact Badge */}
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-xl hidden lg:block" data-testid="hero-availability-badge">
+              <div className="flex items-center space-x-3">
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                <div>
+                  <div className="font-semibold text-sm text-gray-900">Available Now</div>
+                  <div className="text-xs text-gray-600">Free Consultations</div>
                 </div>
               </div>
             </div>
