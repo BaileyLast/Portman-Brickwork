@@ -13,15 +13,11 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative overflow-hidden">
-      {/* Dark gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-transparent"></div>
-      
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="home" className="bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-32 min-h-[80vh]">
           {/* Content Side */}
-          <div className="space-y-8 text-white">
+          <div className="space-y-8">
             {/* Category Tag */}
             <div className="inline-block">
               <span className="text-secondary font-medium text-sm tracking-wide uppercase">
@@ -31,7 +27,7 @@ export default function Hero() {
             
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
                 Building excellence
                 <br />
                 <span className="text-secondary">with expert</span>
@@ -39,7 +35,7 @@ export default function Hero() {
                 craftsmanship
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
                 Portman Brickwork has been delivering outstanding bricklaying services across Essex, Suffolk, and East Anglia since 1976. From residential extensions to commercial projects, we combine traditional skills with modern techniques to create structures that stand the test of time.
               </p>
             </div>
@@ -79,31 +75,31 @@ export default function Hero() {
               </div>
               
               {/* Statistics Card */}
-              <div className="col-span-1 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20" data-testid="hero-stats-card">
+              <div className="col-span-1 bg-card border border-border rounded-xl p-6 shadow-lg" data-testid="hero-stats-card">
                 <div className="space-y-4">
                   <div data-testid="stat-experience">
-                    <div className="text-2xl font-bold text-secondary">48+</div>
-                    <div className="text-xs text-gray-300">Years Experience</div>
+                    <div className="text-2xl font-bold text-primary">48+</div>
+                    <div className="text-xs text-muted-foreground">Years Experience</div>
                   </div>
                   <div data-testid="stat-projects">
-                    <div className="text-2xl font-bold text-secondary">500+</div>
-                    <div className="text-xs text-gray-300">Projects Completed</div>
+                    <div className="text-2xl font-bold text-primary">500+</div>
+                    <div className="text-xs text-muted-foreground">Projects Completed</div>
                   </div>
                   <div data-testid="stat-satisfaction">
-                    <div className="text-2xl font-bold text-secondary">100%</div>
-                    <div className="text-xs text-gray-300">Customer Satisfaction</div>
+                    <div className="text-2xl font-bold text-primary">100%</div>
+                    <div className="text-xs text-muted-foreground">Customer Satisfaction</div>
                   </div>
                 </div>
               </div>
             </div>
             
             {/* Floating Contact Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-xl hidden lg:block" data-testid="hero-availability-badge">
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-xl hidden lg:block" data-testid="hero-availability-badge">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <div>
-                  <div className="font-semibold text-sm text-gray-900">Available Now</div>
-                  <div className="text-xs text-gray-600">Free Consultations</div>
+                  <div className="font-semibold text-sm text-foreground">Available Now</div>
+                  <div className="text-xs text-muted-foreground">Free Consultations</div>
                 </div>
               </div>
             </div>
