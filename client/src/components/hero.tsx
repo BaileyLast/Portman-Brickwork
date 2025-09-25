@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroImage from "@assets/1.png";
 
 export default function Hero() {
   const handleCall = () => {
@@ -18,7 +19,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')" 
+          backgroundImage: `url(${heroImage})` 
         }}
       />
       <div className="hero-bg absolute inset-0" />

@@ -1,5 +1,6 @@
 import { Check, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import aboutImage from "@assets/3.png";
 
 const features = [
   {
@@ -81,8 +82,8 @@ export default function About() {
           
           <div className="section-fade">
             <img 
-              src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional bricklayer at work" 
+              src={aboutImage} 
+              alt="Professional bricklayer placing red bricks with precision" 
               className="rounded-xl shadow-lg w-full"
             />
           </div>

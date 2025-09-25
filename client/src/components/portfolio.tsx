@@ -1,42 +1,48 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import portfolioImage1 from "@assets/2.png";
+import portfolioImage2 from "@assets/3.png";
+import portfolioImage3 from "@assets/4.png";
+import portfolioImage4 from "@assets/5.png";
+import portfolioImage5 from "@assets/1.png";
+import portfolioImage6 from "@assets/2.png";
 
 const portfolioItems = [
   {
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    title: "Residential Extension",
-    description: "Modern brick extension with matching brickwork to existing structure.",
-    alt: "Residential brick house project"
+    image: portfolioImage1,
+    title: "Precision Brickwork",
+    description: "Expert mortar application and precise brick placement for lasting results.",
+    alt: "Professional mortar work on white bricks"
   },
   {
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    title: "Commercial Building",
-    description: "Large-scale commercial project with precision brickwork and modern design.",
-    alt: "Professional bricklaying craftsmanship"
+    image: portfolioImage2,
+    title: "Traditional Red Brick",
+    description: "Classic red brick construction with skilled craftsmanship and attention to detail.",
+    alt: "Traditional red brick laying work"
   },
   {
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    title: "Garden Wall",
-    description: "Decorative garden wall with custom pattern work and landscape integration.",
-    alt: "Decorative garden brick wall"
+    image: portfolioImage3,
+    title: "Professional Tools & Technique",
+    description: "Using specialized tools and techniques for perfect brick alignment and finishing.",
+    alt: "Professional bricklaying tools and techniques"
   },
   {
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    title: "Office Complex",
-    description: "Contemporary office building with mixed brick patterns and architectural features.",
-    alt: "Modern commercial brick facade"
+    image: portfolioImage4,
+    title: "Quality Craftsmanship",
+    description: "Expert brick handling and placement ensuring structural integrity and aesthetic appeal.",
+    alt: "Expert brick placement and handling"
   },
   {
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    title: "Brick Driveway",
-    description: "Premium brick driveway with herringbone pattern and professional edging.",
-    alt: "Professional brick driveway"
+    image: portfolioImage5,
+    title: "Construction Site Excellence",
+    description: "Professional site management with quality materials and expert construction techniques.",
+    alt: "Professional construction site with bricks"
   },
   {
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    title: "Historic Restoration",
-    description: "Careful restoration of period brickwork maintaining original character and charm.",
-    alt: "Historic brick restoration project"
+    image: portfolioImage6,
+    title: "Detailed Mortar Work",
+    description: "Precise mortar application and joint finishing for professional results.",
+    alt: "Detailed mortar work and finishing"
   }
 ];
 
