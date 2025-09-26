@@ -20,10 +20,10 @@ export default function Hero() {
           <div className="space-y-8">
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary">
                 Expert Brickwork
                 <br />
-                <span className="text-primary">Built to Last</span>
+                Built to <span className="text-secondary">Last</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
