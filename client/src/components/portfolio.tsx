@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import portfolioImage1 from "@assets/6.png";
-import portfolioImage2 from "@assets/7.png";
-import portfolioImage3 from "@assets/8.png";
-import portfolioImage4 from "@assets/9.png";
-import portfolioImage5 from "@assets/10.png";
+import portfolioImage1 from "@assets/7.png";
+import portfolioImage2 from "@assets/9.png";
+import portfolioImage3 from "@assets/6.png";
+import portfolioImage4 from "@assets/10.png";
+import portfolioImage5 from "@assets/4.png";
 import portfolioImage6 from "@assets/1.png";
 
 const portfolioItems = [
