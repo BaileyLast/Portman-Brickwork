@@ -18,21 +18,12 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-32 min-h-[80vh]">
           {/* Content Side */}
           <div className="space-y-8">
-            {/* Category Tag */}
-            <div className="inline-block">
-              <span className="text-secondary font-medium text-sm tracking-wide uppercase">
-                Professional Brickwork
-              </span>
-            </div>
-            
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-                Building excellence
+                Expert Brickwork
                 <br />
-                <span className="text-secondary">with expert</span>
-                <br />
-                craftsmanship
+                <span className="text-primary">Built to Last</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
