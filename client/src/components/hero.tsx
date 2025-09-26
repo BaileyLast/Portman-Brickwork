@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start py-20 lg:py-32 min-h-[80vh]">
           {/* Content Side */}
-          <div className="space-y-6 lg:pt-8">
+          <div className="space-y-6">
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary">
