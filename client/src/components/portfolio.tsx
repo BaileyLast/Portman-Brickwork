@@ -10,39 +10,39 @@ import portfolioImage6 from "@assets/2.png";
 const portfolioItems = [
   {
     image: portfolioImage1,
-    title: "Precision Brickwork",
-    description: "Expert mortar application and precise brick placement for lasting results.",
-    alt: "Professional mortar work on white bricks"
+    title: "Driveways (Block Paving)",
+    description: "Interlocking brick/block patterns for vehicle access.",
+    alt: "Professional block paving driveway construction"
   },
   {
     image: portfolioImage2,
-    title: "Traditional Red Brick",
-    description: "Classic red brick construction with skilled craftsmanship and attention to detail.",
-    alt: "Traditional red brick laying work"
+    title: "Garden / Boundary Walls",
+    description: "Single-skin or double-skin brick walls for dividing property lines.",
+    alt: "Garden boundary wall construction"
   },
   {
     image: portfolioImage3,
-    title: "Professional Tools & Technique",
-    description: "Using specialized tools and techniques for perfect brick alignment and finishing.",
-    alt: "Professional bricklaying tools and techniques"
+    title: "Patios & Pathways",
+    description: "Brick or block laid flat in patterns (herringbone, stretcher bond, basket weave).",
+    alt: "Patio and pathway brick laying"
   },
   {
     image: portfolioImage4,
-    title: "Quality Craftsmanship",
-    description: "Expert brick handling and placement ensuring structural integrity and aesthetic appeal.",
-    alt: "Expert brick placement and handling"
+    title: "Brick Barbecues / Outdoor Kitchens",
+    description: "Permanent brick structures for garden use.",
+    alt: "Brick barbecue and outdoor kitchen construction"
   },
   {
     image: portfolioImage5,
-    title: "Construction Site Excellence",
-    description: "Professional site management with quality materials and expert construction techniques.",
-    alt: "Professional construction site with bricks"
+    title: "Pillars & Gate Posts",
+    description: "Decorative or structural brickwork for gates, fencing, or entryways.",
+    alt: "Decorative brick pillars and gate posts"
   },
   {
     image: portfolioImage6,
-    title: "Detailed Mortar Work",
-    description: "Precise mortar application and joint finishing for professional results.",
-    alt: "Detailed mortar work and finishing"
+    title: "House Extensions / Porches",
+    description: "Brickwork to match existing home style for added rooms or porch areas.",
+    alt: "House extension and porch brickwork"
   }
 ];
 
@@ -58,9 +58,9 @@ export default function Portfolio() {
     <section id="portfolio" className="py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 section-fade">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Recent Work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">The work we do</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            See the quality and craftsmanship that goes into every project we complete.
+            Professional brickwork services across Essex, Suffolk, and East Anglia.
           </p>
         </div>
 
