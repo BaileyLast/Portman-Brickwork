@@ -68,7 +68,7 @@
   --card-foreground: hsl(0, 0%, 95%);
   --popover: hsl(218, 11%, 8%);
   --popover-foreground: hsl(0, 0%, 95%);
-  --primary: hsl(208, 100%, 50%);
+  --primary: hsl(208, 100%, 40%);
   --primary-foreground: hsl(0, 0%, 98%);
   --secondary: hsl(355, 85%, 50%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -80,7 +80,7 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --border: hsl(218, 11%, 20%);
   --input: hsl(218, 11%, 20%);
-  --ring: hsl(208, 100%, 50%);
+  --ring: hsl(208, 100%, 40%);
 }
 
 @layer base {
