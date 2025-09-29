@@ -243,19 +243,19 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold mb-4">Free Quote Process</h3>
                 <div className="space-y-4 text-left">
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</div>
+                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold border-2 border-secondary">1</div>
                     <div>Contact us by phone or online form</div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</div>
+                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold border-2 border-secondary">2</div>
                     <div>Schedule free on-site assessment</div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</div>
+                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold border-2 border-secondary">3</div>
                     <div>Receive detailed written estimate</div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</div>
+                    <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold border-2 border-secondary">4</div>
                     <div>Review and approve before work begins</div>
                   </div>
                 </div>
