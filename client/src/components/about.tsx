@@ -8,10 +8,6 @@ const features = [
     description: "Nearly 50 years of specialist bricklaying experience across residential and commercial projects."
   },
   {
-    title: "Fully Insured & Licensed",
-    description: "Complete insurance coverage and proper licensing for your peace of mind."
-  },
-  {
     title: "Quality Guarantee",
     description: "We stand behind our work with comprehensive warranties on all projects."
   },

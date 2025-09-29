@@ -75,17 +75,6 @@ export default function Hero() {
                 />
               </div>
             </div>
-            
-            {/* Floating Contact Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-xl hidden lg:block" data-testid="hero-availability-badge">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <div>
-                  <div className="font-semibold text-sm text-foreground">Available Now</div>
-                  <div className="text-xs text-muted-foreground">Free Consultations</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
