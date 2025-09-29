@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage1 from "@assets/3.png";
 import heroImage2 from "@assets/4.png";
+import heroImage3 from "@assets/5.png";
 
 export default function Hero() {
 
@@ -65,22 +66,13 @@ export default function Hero() {
                 />
               </div>
               
-              {/* Statistics Card */}
-              <div className="col-span-1 bg-card border border-border rounded-xl p-6 shadow-lg" data-testid="hero-stats-card">
-                <div className="space-y-4">
-                  <div data-testid="stat-experience">
-                    <div className="text-2xl font-bold text-primary">48+</div>
-                    <div className="text-xs text-muted-foreground">Years Experience</div>
-                  </div>
-                  <div data-testid="stat-projects">
-                    <div className="text-2xl font-bold text-primary">500+</div>
-                    <div className="text-xs text-muted-foreground">Projects Completed</div>
-                  </div>
-                  <div data-testid="stat-satisfaction">
-                    <div className="text-2xl font-bold text-primary">100%</div>
-                    <div className="text-xs text-muted-foreground">Customer Satisfaction</div>
-                  </div>
-                </div>
+              {/* Third Image */}
+              <div className="col-span-1">
+                <img 
+                  src={heroImage3} 
+                  alt="Quality brick placement and construction technique"
+                  className="rounded-xl shadow-xl w-full h-[200px] object-cover"
+                />
               </div>
             </div>
             
