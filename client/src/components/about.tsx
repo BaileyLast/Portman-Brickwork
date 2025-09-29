@@ -44,7 +44,7 @@ export default function About() {
             <div className="space-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3" data-testid={`feature-${index}`}>
-                  <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center mt-1 flex-shrink-0">
+                  <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center mt-1 flex-shrink-0 border-2 border-secondary">
                     <Check className="h-4 w-4" />
                   </div>
                   <div>
