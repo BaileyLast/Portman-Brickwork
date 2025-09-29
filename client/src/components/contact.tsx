@@ -170,7 +170,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4" data-testid="contact-phone">
-                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 border-2 border-secondary">
                       <Phone className="h-5 w-5" />
                     </div>
                     <div>
@@ -181,7 +181,7 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start space-x-4" data-testid="contact-email">
-                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 border-2 border-secondary">
                       <Mail className="h-5 w-5" />
                     </div>
                     <div>
@@ -192,7 +192,7 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start space-x-4" data-testid="contact-location">
-                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 border-2 border-secondary">
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div>
