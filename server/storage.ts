@@ -41,6 +41,7 @@ export class MemStorage implements IStorage {
       ...insertSubmission,
       id,
       createdAt: new Date(),
+      phone: null,
       projectType: insertSubmission.projectType || null,
       preferredContactMethod: insertSubmission.preferredContactMethod || null,
     };

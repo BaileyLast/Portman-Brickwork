@@ -1,19 +1,19 @@
-import { Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function FloatingCTA() {
-  const handleCall = () => {
-    window.location.href = "tel:+1234567890";
+  const handleEmail = () => {
+    window.location.href = "mailto:info@portmanbrickwork.co.uk";
   };
 
   return (
     <button
-      onClick={handleCall}
+      onClick={handleEmail}
       className="floating-cta"
-      data-testid="floating-call-button"
+      data-testid="floating-email-button"
     >
       <div className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 font-semibold">
-        <Phone className="text-lg" />
-        <span className="hidden sm:inline">Call Now</span>
+        <Mail className="text-lg" />
+        <span className="hidden sm:inline">Email Now</span>
       </div>
     </button>
   );

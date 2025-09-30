@@ -255,15 +255,8 @@ export default function PortfolioPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                onClick={() => window.location.href = "tel:+1234567890"}
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg h-auto"
-                data-testid="portfolio-call-button"
-              >
-                Call: (123) 456-7890
-              </Button>
-              <Button
                 onClick={scrollToContact}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg h-auto"
+                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg h-auto"
                 data-testid="portfolio-quote-button"
               >
                 Get Free Quote

@@ -160,16 +160,8 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  onClick={() => window.location.href = "tel:+1234567890"}
-                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-                  data-testid="about-call-button"
-                >
-                  Call Us Today
-                </Button>
-                <Button
                   onClick={scrollToContact}
-                  variant="outline"
-                  className="border-border hover:bg-muted"
+                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground"
                   data-testid="about-quote-button"
                 >
                   Get Free Quote

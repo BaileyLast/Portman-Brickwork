@@ -1,4 +1,4 @@
-import { Check, Phone, MessageCircle } from "lucide-react";
+import { Check, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import aboutImage from "@assets/3.png";
 
@@ -18,10 +18,6 @@ const features = [
 ];
 
 export default function About() {
-  const handleCall = () => {
-    window.location.href = "tel:+1234567890";
-  };
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -57,17 +53,8 @@ export default function About() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={handleCall}
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-                data-testid="about-call-button"
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                Call for Quote
-              </Button>
-              <Button 
                 onClick={scrollToContact}
-                variant="outline"
-                className="border-border hover:bg-muted"
+                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground"
                 data-testid="about-contact-button"
               >
                 <MessageCircle className="mr-2 h-4 w-4" />

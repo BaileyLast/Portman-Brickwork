@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import logoImage from "@assets/Portman Brickwork Logo _1757687758603.png";
 
 export default function Footer() {
@@ -83,10 +83,6 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>(123) 456-7890</span>
-              </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
                 <span>info@portmanbrickwork.co.uk</span>

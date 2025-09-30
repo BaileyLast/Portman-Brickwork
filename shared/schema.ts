@@ -13,7 +13,7 @@ export const contactSubmissions = pgTable("contact_submissions", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   fullName: text("full_name").notNull(),
   email: text("email").notNull(),
-  phone: text("phone").notNull(),
+  phone: text("phone"),
   projectType: text("project_type"),
   projectDescription: text("project_description").notNull(),
   preferredContactMethod: text("preferred_contact_method"),
@@ -28,10 +28,10 @@ export const insertUserSchema = createInsertSchema(users).pick({
 export const insertContactSubmissionSchema = createInsertSchema(contactSubmissions).omit({
   id: true,
   createdAt: true,
+  phone: true,
 }).extend({
   fullName: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
   projectDescription: z.string().min(10, "Please provide more details about your project"),
 });
 

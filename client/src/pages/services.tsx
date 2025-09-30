@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import FloatingCTA from "@/components/floating-cta";
 import Contact from "@/components/contact";
 import { useEffect } from "react";
-import { Phone, Star, Award, Clock } from "lucide-react";
+import { Star, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import servicesHeroImage from "@assets/6.png";
@@ -66,10 +66,6 @@ export default function ServicesPage() {
     return () => observer.disconnect();
   }, []);
 
-  const handleCall = () => {
-    window.location.href = "tel:+1234567890";
-  };
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -98,17 +94,8 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
-                  onClick={handleCall}
-                  className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg h-auto rounded-lg"
-                  data-testid="services-call-button"
-                >
-                  <Phone className="mr-2" />
-                  Call: (123) 456-7890
-                </Button>
-                <Button
                   onClick={scrollToContact}
-                  variant="outline"
-                  className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg h-auto rounded-lg"
+                  className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg h-auto rounded-lg"
                   data-testid="services-quote-button"
                 >
                   Get Free Quote
@@ -225,7 +212,7 @@ export default function ServicesPage() {
                 <div className="space-y-4 text-left">
                   <div className="flex items-start space-x-3">
                     <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold border-2 border-secondary">1</div>
-                    <div>Contact us by phone or online form</div>
+                    <div>Contact us via online form</div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold border-2 border-secondary">2</div>

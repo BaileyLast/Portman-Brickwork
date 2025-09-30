@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
-import { Phone, Mail, MapPin, Clock, Tag, Shield, Award } from "lucide-react";
+import { Mail, MapPin, Clock, Tag, Shield, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,7 +22,6 @@ export default function Contact() {
     defaultValues: {
       fullName: "",
       email: "",
-      phone: "",
       projectType: "",
       projectDescription: "",
       preferredContactMethod: "email",
@@ -71,32 +70,17 @@ export default function Contact() {
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-6">Request a Quote</h3>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="fullName">Full Name *</Label>
-                    <Input
-                      id="fullName"
-                      {...form.register("fullName")}
-                      placeholder="John Smith"
-                      data-testid="input-fullname"
-                    />
-                    {form.formState.errors.fullName && (
-                      <p className="text-destructive text-sm mt-1">{form.formState.errors.fullName.message}</p>
-                    )}
-                  </div>
-                  <div>
-                    <Label htmlFor="phone">Phone Number *</Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      {...form.register("phone")}
-                      placeholder="(123) 456-7890"
-                      data-testid="input-phone"
-                    />
-                    {form.formState.errors.phone && (
-                      <p className="text-destructive text-sm mt-1">{form.formState.errors.phone.message}</p>
-                    )}
-                  </div>
+                <div>
+                  <Label htmlFor="fullName">Full Name *</Label>
+                  <Input
+                    id="fullName"
+                    {...form.register("fullName")}
+                    placeholder="John Smith"
+                    data-testid="input-fullname"
+                  />
+                  {form.formState.errors.fullName && (
+                    <p className="text-destructive text-sm mt-1">{form.formState.errors.fullName.message}</p>
+                  )}
                 </div>
                 
                 <div>
@@ -169,17 +153,6 @@ export default function Contact() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-6">
-                  <div className="flex items-start space-x-4" data-testid="contact-phone">
-                    <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 border-2 border-secondary">
-                      <Phone className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                      <p className="text-muted-foreground">(123) 456-7890</p>
-                      <p className="text-sm text-muted-foreground">Mon-Fri: 7:00 AM - 6:00 PM</p>
-                    </div>
-                  </div>
-                  
                   <div className="flex items-start space-x-4" data-testid="contact-email">
                     <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 border-2 border-secondary">
                       <Mail className="h-5 w-5" />
