@@ -1,7 +1,6 @@
 import Navigation from "@/components/navigation";
 import Services from "@/components/services";
 import Footer from "@/components/footer";
-import FloatingCTA from "@/components/floating-cta";
 import Contact from "@/components/contact";
 import { useEffect } from "react";
 import { Star, Award, Clock } from "lucide-react";
@@ -227,7 +226,6 @@ export default function ServicesPage() {
       <Contact />
       
       <Footer />
-      <FloatingCTA />
     </div>
   );
 }

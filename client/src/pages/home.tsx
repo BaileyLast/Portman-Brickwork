@@ -5,7 +5,6 @@ import About from "@/components/about";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
-import FloatingCTA from "@/components/floating-cta";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -52,7 +51,6 @@ export default function Home() {
       <Testimonials />
       <Contact />
       <Footer />
-      <FloatingCTA />
     </div>
   );
 }

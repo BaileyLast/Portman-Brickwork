@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import FloatingCTA from "@/components/floating-cta";
 import Contact from "@/components/contact";
 import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -230,7 +229,6 @@ export default function AboutPage() {
       <Contact />
       
       <Footer />
-      <FloatingCTA />
     </div>
   );
 }
