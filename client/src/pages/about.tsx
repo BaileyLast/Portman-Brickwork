@@ -127,20 +127,6 @@ export default function AboutPage() {
       
       <Navigation />
       
-      {/* About Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-primary/10 to-accent/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center section-fade">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              About Portman Brickwork
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Building across Essex, Suffolk, and East Anglia since 1976. Discover our story, meet our team, and learn why we're the trusted choice for quality brickwork.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Our Story */}
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
