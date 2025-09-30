@@ -1,4 +1,4 @@
-import { Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Link } from "wouter";
 import logoImage from "@assets/Portman Brickwork Logo _1757687758603.png";
 
@@ -26,17 +26,6 @@ export default function Footer() {
             <p className="text-gray-300 text-sm mb-4">
               Professional bricklaying services by Portman Brickwork across Essex, Suffolk, and East Anglia. Quality craftsmanship with expertise since 1976.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-primary transition-colors" data-testid="social-facebook">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-primary transition-colors" data-testid="social-instagram">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-primary transition-colors" data-testid="social-linkedin">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
           
           <div>
