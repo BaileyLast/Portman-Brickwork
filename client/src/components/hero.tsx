@@ -76,7 +76,7 @@ export default function Hero() {
               </div>
               
               {/* Red decorative line */}
-              <div className="col-span-2 h-1 bg-secondary -mt-4"></div>
+              <div className="col-span-2 h-1 bg-secondary"></div>
             </div>
           </div>
         </div>
