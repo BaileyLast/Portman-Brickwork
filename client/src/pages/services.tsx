@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import FloatingCTA from "@/components/floating-cta";
 import Contact from "@/components/contact";
 import { useEffect } from "react";
-import { Phone, Star, Award, Shield, Clock } from "lucide-react";
+import { Phone, Star, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import servicesHeroImage from "@assets/6.png";
@@ -16,11 +16,6 @@ const whyChooseUs = [
     icon: Award,
     title: "Expertise Since 1976",
     description: "Proven track record with hundreds of completed projects"
-  },
-  {
-    icon: Shield,
-    title: "Fully Licensed & Insured",
-    description: "Complete protection and peace of mind for every project"
   },
   {
     icon: Star,
