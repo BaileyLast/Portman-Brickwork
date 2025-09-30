@@ -47,13 +47,6 @@ export default function Navigation() {
               Services
             </Link>
             <Link 
-              href="/portfolio"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              data-testid="nav-portfolio"
-            >
-              Portfolio
-            </Link>
-            <Link 
               href="/about"
               className="text-muted-foreground hover:text-primary transition-colors"
               data-testid="nav-about"
@@ -100,14 +93,6 @@ export default function Navigation() {
                 data-testid="mobile-nav-services"
               >
                 Services
-              </Link>
-              <Link 
-                href="/portfolio"
-                className="text-left text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-                data-testid="mobile-nav-portfolio"
-              >
-                Portfolio
               </Link>
               <Link 
                 href="/about"
