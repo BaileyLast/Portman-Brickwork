@@ -74,6 +74,9 @@ export default function Hero() {
                   className="rounded-xl shadow-xl w-full h-[200px] object-cover"
                 />
               </div>
+              
+              {/* Red decorative line */}
+              <div className="col-span-2 h-1 bg-secondary -mt-4"></div>
             </div>
           </div>
         </div>
