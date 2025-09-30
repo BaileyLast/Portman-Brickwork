@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { Phone, Check, Star, Award, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import servicesHeroImage from "@assets/6.png";
 
 
 const whyChooseUs = [
@@ -84,37 +85,26 @@ export default function ServicesPage() {
       <Navigation />
       
       {/* Services Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center" 
-          style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')" 
-          }}
-        />
-        {/* Blue Overlay */}
-        <div className="hero-bg absolute inset-0" />
-        
-        {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="bg-background pt-24 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-20">
             {/* Left side - Main content */}
-            <div className="section-fade">
-              <div className="inline-block px-4 py-2 bg-secondary/20 rounded-full mb-6">
-                <span className="text-secondary font-medium">Our Services</span>
+            <div className="section-fade space-y-6">
+              <div className="inline-block px-4 py-2 bg-secondary/10 rounded-full">
+                <span className="text-secondary font-semibold">Our Services</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 Complete 
                 <span className="block text-secondary">Bricklaying</span>
                 Solutions
               </h1>
-              <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 From garden walls to house extensions, we bring your vision to life with expert craftsmanship and attention to detail.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   onClick={handleCall}
-                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg h-auto"
+                  className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg h-auto rounded-lg"
                   data-testid="services-call-button"
                 >
                   <Phone className="mr-2" />
@@ -123,7 +113,7 @@ export default function ServicesPage() {
                 <Button
                   onClick={scrollToContact}
                   variant="outline"
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg h-auto"
+                  className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg h-auto rounded-lg"
                   data-testid="services-quote-button"
                 >
                   Get Free Quote
@@ -131,34 +121,13 @@ export default function ServicesPage() {
               </div>
             </div>
             
-            {/* Right side - Service highlights */}
-            <div className="section-fade">
-              <div className="grid grid-cols-2 gap-4">
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-secondary mb-2">6</div>
-                    <div className="text-sm text-slate-300">Service Categories</div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-secondary mb-2">24+</div>
-                    <div className="text-sm text-slate-300">Specialist Services</div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-secondary mb-2">48+</div>
-                    <div className="text-sm text-slate-300">Years Experience</div>
-                  </CardContent>
-                </Card>
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-secondary mb-2">100%</div>
-                    <div className="text-sm text-slate-300">Quality Guarantee</div>
-                  </CardContent>
-                </Card>
-              </div>
+            {/* Right side - Authentic brickwork image */}
+            <div className="section-fade relative lg:order-last">
+              <img 
+                src={servicesHeroImage} 
+                alt="Professional brickwork construction showcasing quality craftsmanship"
+                className="rounded-2xl shadow-2xl w-full object-cover"
+              />
             </div>
           </div>
         </div>
