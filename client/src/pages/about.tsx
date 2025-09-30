@@ -226,61 +226,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Us Summary */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center section-fade">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              Why Choose Portman Brickwork?
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
-              <div className="flex items-start space-x-3">
-                <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Regional Expertise</h3>
-                  <p className="text-muted-foreground text-sm">Deep understanding of Essex, Suffolk, and East Anglian architectural styles and building requirements.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Quality Materials</h3>
-                  <p className="text-muted-foreground text-sm">Premium bricks and materials sourced from trusted local and national suppliers.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Competitive Pricing</h3>
-                  <p className="text-muted-foreground text-sm">Fair, transparent pricing with detailed quotes and no hidden costs.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Clean & Tidy</h3>
-                  <p className="text-muted-foreground text-sm">Professional worksite management with daily cleanup and respect for your property.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Project Warranty</h3>
-                  <p className="text-muted-foreground text-sm">Comprehensive warranties on all work with ongoing support and maintenance.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-2">Emergency Service</h3>
-                  <p className="text-muted-foreground text-sm">Available for urgent repairs and emergency brickwork requirements.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <Contact />
       
