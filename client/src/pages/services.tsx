@@ -9,8 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import servicesHeroImage from "@assets/6.png";
 import brickIcon from "@assets/Portman Brickwork brick design_1757687674824.png";
-import bricklayerBlue from "@assets/Blue_1759249592446.png";
-import bricklayerRed from "@assets/Red_1759249595068.png";
 
 
 const whyChooseUs = [
@@ -105,26 +103,11 @@ export default function ServicesPage() {
             
             {/* Right side - Authentic brickwork image */}
             <div className="section-fade relative lg:order-last space-y-4">
-              <div className="relative">
-                <img 
-                  src={servicesHeroImage} 
-                  alt="Professional brickwork construction showcasing quality craftsmanship"
-                  className="rounded-2xl shadow-2xl w-full object-cover"
-                />
-                {/* Bricklayer graphic with hover effect */}
-                <div className="absolute top-0 left-0 md:-top-4 md:-left-4 lg:-top-6 lg:-left-6 w-32 md:w-48 lg:w-56 group cursor-pointer">
-                  <img 
-                    src={bricklayerBlue} 
-                    alt="Bricklayer at work"
-                    className="w-full h-auto transition-opacity duration-300 group-hover:opacity-0"
-                  />
-                  <img 
-                    src={bricklayerRed} 
-                    alt="Bricklayer at work"
-                    className="w-full h-auto absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  />
-                </div>
-              </div>
+              <img 
+                src={servicesHeroImage} 
+                alt="Professional brickwork construction showcasing quality craftsmanship"
+                className="rounded-2xl shadow-2xl w-full object-cover"
+              />
               {/* Red decorative line */}
               <div className="h-1 bg-secondary"></div>
             </div>
