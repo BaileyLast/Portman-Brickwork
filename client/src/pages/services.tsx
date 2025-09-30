@@ -122,12 +122,14 @@ export default function ServicesPage() {
             </div>
             
             {/* Right side - Authentic brickwork image */}
-            <div className="section-fade relative lg:order-last">
+            <div className="section-fade relative lg:order-last space-y-4">
               <img 
                 src={servicesHeroImage} 
                 alt="Professional brickwork construction showcasing quality craftsmanship"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
+              {/* Red decorative line */}
+              <div className="h-1 bg-secondary"></div>
             </div>
           </div>
         </div>
