@@ -77,7 +77,7 @@ export default function ServicesPage() {
       <Navigation />
       
       {/* Services Hero Section */}
-      <section className="bg-background pt-24 pb-16">
+      <section className="bg-background pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-20">
             {/* Left side - Main content */}
