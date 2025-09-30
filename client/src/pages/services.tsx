@@ -4,10 +4,11 @@ import Footer from "@/components/footer";
 import FloatingCTA from "@/components/floating-cta";
 import Contact from "@/components/contact";
 import { useEffect } from "react";
-import { Phone, Check, Star, Award, Shield, Clock } from "lucide-react";
+import { Phone, Star, Award, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import servicesHeroImage from "@assets/6.png";
+import brickIcon from "@assets/Portman Brickwork brick design_1757687674824.png";
 
 
 const whyChooseUs = [
@@ -90,9 +91,6 @@ export default function ServicesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-20">
             {/* Left side - Main content */}
             <div className="section-fade space-y-6">
-              <div className="inline-block px-4 py-2 bg-secondary/10 rounded-full">
-                <span className="text-secondary font-semibold">Our Services</span>
-              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 Complete 
                 <span className="block text-secondary">Bricklaying</span>
@@ -183,25 +181,25 @@ export default function ServicesPage() {
               <h3 className="text-2xl font-bold mb-6">What Affects Project Cost?</h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
-                  <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
+                  <img src={brickIcon} alt="brick icon" className="mt-1 h-5 w-5 flex-shrink-0" />
                   <div>
                     <strong>Project Size:</strong> Square footage and complexity
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
+                  <img src={brickIcon} alt="brick icon" className="mt-1 h-5 w-5 flex-shrink-0" />
                   <div>
                     <strong>Brick Type:</strong> Standard, premium, or specialty bricks
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
+                  <img src={brickIcon} alt="brick icon" className="mt-1 h-5 w-5 flex-shrink-0" />
                   <div>
                     <strong>Site Access:</strong> Accessibility and preparation needs
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Check className="text-primary mt-1 h-5 w-5 flex-shrink-0" />
+                  <img src={brickIcon} alt="brick icon" className="mt-1 h-5 w-5 flex-shrink-0" />
                   <div>
                     <strong>Timeline:</strong> Standard vs. expedited completion
                   </div>
