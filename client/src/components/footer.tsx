@@ -1,9 +1,10 @@
 import { Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 import logoImage from "@assets/Portman Brickwork Logo _1757687758603.png";
 
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -42,40 +43,40 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/services"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-service-residential"
                 >
                   Residential Bricklaying
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/services"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-service-commercial"
                 >
                   Commercial Projects
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/services"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-service-repairs"
                 >
                   Repairs & Restoration
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/services"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-service-structural"
                 >
                   Structural Work
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -98,35 +99,35 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <button 
-                  onClick={() => scrollToSection('home')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-link-home"
                 >
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/services"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-link-services"
                 >
                   Services
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')}
-                  className="hover:text-primary transition-colors text-left"
+                <Link 
+                  href="/about"
+                  className="hover:text-primary transition-colors"
                   data-testid="footer-link-about"
                 >
                   About
-                </button>
+                </Link>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('contact')}
+                  onClick={scrollToContact}
                   className="hover:text-primary transition-colors text-left"
                   data-testid="footer-link-quote"
                 >
